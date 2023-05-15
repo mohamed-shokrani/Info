@@ -29,7 +29,7 @@ html {
       margin: 0;
   }
   #bg {
-      background-image: url('/Images/coffe.jpg');
+      background-image: url('./Images/coffe.jpg');
       height: 100vh !important;
       background-repeat: no-repeat;
       background-size: cover !important;
