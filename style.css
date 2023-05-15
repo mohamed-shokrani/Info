@@ -118,7 +118,7 @@ header{
   @import "~@fortawesome/fontawesome-free/css/all.css";
 
 .my-image {
-    // background-image: url('/src/assets/Images/wallpaperflare.com_wallpaper.jpg');
+    // background-image: url('./Images/wallpaperflare.com_wallpaper.jpg');
     width: 100px;
     height: 100px;
 }
