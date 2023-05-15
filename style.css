@@ -1,0 +1,393 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+html {
+    font-size: 14px;
+  }
+  *{
+    margin: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+  }
+  
+  html {
+      position: relative;
+      min-height: 100%;
+      margin: 0;
+  }
+  #bg {
+      background-image: url('/Images/coffe.jpg');
+      height: 100vh !important;
+      background-repeat: no-repeat;
+      background-size: cover !important;
+      background-position: center;
+      min-height: 100%;
+      background-size: 100% 100%;
+      opacity: .9 ;
+      
+  }
+  .mask {
+      background-color: rgba(0,0,0,0.6) !important;
+  }
+
+/* Nav bar Styling */
+
+header{
+    font-family: fantasy;
+    text-decoration:none;
+
+    background-color:transparent;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    border-bottom:1px  groove;
+    border-bottom-color: #e3a182;  
+    letter-spacing: 1px;
+    box-shadow: rgba(255, 255, 255, 0.25) }
+  .logo{
+    text-decoration: none;
+    color: rgb(255, 152, 17);
+    font-size: 1.2em;
+  }
+  .navigation a{
+    text-decoration:none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+    color: rgb(255, 152, 17);
+    size: 1.1em;
+    letter-spacing: 1px;
+  }
+  .logo-icon{
+    background-color:  rgb(255, 152, 17);
+  }
+  .flip:hover{
+  
+  animation-play-state: paused;
+    
+  }
+
+.flip {
+  animation-name: flip;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-out; /* optional: makes the animation smoother */
+}
+
+  .logo:hover{
+  color: aqua;
+  animation-name: flip;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-out  
+  }
+  @keyframes flip {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50%{
+      color: rgb(20, 54, 54);
+      box-shadow: 0 1px ;
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+  /* Body Content*/
+
+  @import "~@fortawesome/fontawesome-free/css/all.css";
+
+.my-image {
+    // background-image: url('/src/assets/Images/wallpaperflare.com_wallpaper.jpg');
+    width: 100px;
+    height: 100px;
+}
+
+section {
+    padding: 80px 180px;
+}
+
+.title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 172, 64);
+    letter-spacing: 2px;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    backface-visibility: visible;
+
+}
+
+.title-name {
+    color: rgb(255, 243, 203);
+    letter-spacing: 2px;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    backface-visibility: visible;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+
+    80% {
+        transform: translateX(10px);
+        opacity: .4;
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 145, 0);
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.my-card {
+    background-color: rgb(249, 229, 203);
+    width: 20.21em;
+    box-shadow: 0 5px 35px rgba(79, 63, 63, 0.5);
+    border-radius: 5px;
+    padding: 1.1em;
+    margin: 15px;
+    transition: 0.4s ease;
+}
+
+.my-icon {
+    font-size: 7em;
+    text-align: center;
+    color: rgb(1, 1, 1);
+}
+
+.second-icon {
+    font-size: 7em;
+    text-align: center;
+    color: rgb(1, 1, 1);
+}
+
+#user {
+    color: black;
+}
+
+.my-card {
+    animation-name: CardAnimation;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    backface-visibility: visible;
+    animation-timing-function: 1;
+}
+
+@keyframes CardAnimation {
+    1% {
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+
+    80% {
+        transform: translateX(-10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+.my-card:hover {
+    cursor: pointer;
+    animation-name: FlipCard;
+    animation-duration: 3s;
+    animation-timing-function:ease-in;
+    animation-delay: .5s;
+    backface-visibility: visible;
+
+}
+
+@keyframes FlipCard {
+    0% {
+        transform: rotateY(100deg)
+    }
+
+    
+    50% {
+
+        transform: rotateY(200deg)
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateY(360deg)
+    }
+}
+@keyframes CardAnimationPaused {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/* After Cards*/
+.until{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color:  rgb(255, 243, 203);
+    letter-spacing: 2px;
+    animation-name:unitlAppearance ;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    backface-visibility: visible;
+    
+}
+@keyframes unitlAppearance{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    80%{
+        transform: translateX(10px);
+        opacity: .4;
+
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+.describe-my-self{
+    color:  rgb(255, 145, 0);
+    text-align: center;
+    padding: 1em;
+}
+.stewi-section{
+    background-color: black;
+}
+.mrstwei{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px; 
+    animation-name:gifAppearance ;
+    animation-duration: 7s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in;
+    backface-visibility: visible;
+}
+@keyframes gifAppearance{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    80%{
+        transform: translateX(10px);
+        opacity: .4;
+
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+.describe-my-self-bahgat{
+    text-align: center;
+    color:  rgb(255, 145, 0);
+}
+.bahgat-section{
+    padding-top: 10px;
+    border-top: 1px white;
+    margin-top: 1px;
+    background-color: black;
+    text-align: center;
+}
+.bahgat-image{
+    text-align: center;
+    
+    width: 300px;
+    height: 200px;
+}
+.git-section{
+    padding-top: 10px;
+    border-top: 1px white;
+    margin-top: 1px;
+    background-color: black;
+    text-align: center;
+    color: rgb(161, 163, 165);
+}
